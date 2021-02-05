@@ -10,6 +10,7 @@
 
 import os,random,sys
 from time import sleep
+import pyperclip as pc 
 
 def passwort_generieren(länge):
     len_klein_buchstaben = len(library['buchstaben'])
@@ -52,10 +53,10 @@ library = {
 }
 
 if __name__  == '__main__':
-    l = input("Password Länge = ")  #Länge des Passworts
+    l = input("Password Länge / Password length = ")  #Länge des Passworts
     os.system("cls")
     länge = int(l)
-    sys.stdout.write("\r INFO: Passwort wird generiert..")
+    sys.stdout.write("\r INFO: Passwort wird generiert / Generating Password..")
     sys.stdout.flush()
     passwort = passwort_generieren(länge)
     print("(+)")
@@ -68,3 +69,7 @@ if __name__  == '__main__':
     Passwort: %s
     \n\n
     """%(passwort))
+
+pc.copy(passwort)
+print("INFO: Passwort wurde kopiert! / Copied to Clipboard!")    
+input("")
