@@ -14,4 +14,4 @@ mit
       pip install pyperclip 
 
 
-Dieses Modul ist nur dazu vorhanden, dass das Passwort, nachdem es generiert wurde in die Zwischenablage gespeichert wurde -d.h. Clipboard-.
+Dieses Modul ist nur dazu vorhanden, dass das Passwort nachdem es generiert wurde in die Zwischenablage gespeichert wurde -d.h. Clipboard-.
